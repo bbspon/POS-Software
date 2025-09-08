@@ -290,14 +290,7 @@ const Sidebar = () => {
                               Create New Subcategory
                             </Link>
                           </li>
-                          <li>
-                            <Link
-                              to="/inventory-adjust"
-                              style={styles.dropdownLink}
-                            >
-                              Categories
-                            </Link>
-                          </li>
+                         
                           <li>
                             <Link to="/pricelists" style={styles.dropdownLink}>
                               Price List
