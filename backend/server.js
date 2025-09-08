@@ -82,6 +82,8 @@ app.use("/api/pharmacy-invoice", pharmacyInvoiceRoutes); // THIS LINE IS CRUCIAL
 
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/items", require("./routes/itemsRoutes"));
+app.use("/api/categories", require("./routes/categoryRoutes"));
+app.use("/api/subcategories", require("./routes/subcategoryRoutes"));
 
 // Start the server
 const PORT = process.env.PORT || 5000;

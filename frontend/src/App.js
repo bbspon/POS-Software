@@ -87,6 +87,8 @@ import Shipments from "./pages/StoreHardware/Preferences/Shipments";
 import DeliveryChallans from "./pages/StoreHardware/Preferences/DeliveryChallans";
 import Payments from "./pages/StoreHardware/Preferences/Payments";
 import Invoices from "./pages/StoreHardware/Preferences/Invoices";
+import CreateCategory from "./pages/StoreHardware/CreateCategory"
+import CreateSubcategory from "./pages/StoreHardware/CreateSubcategory";
 function App() {
   return (
     <Router>
@@ -236,6 +238,8 @@ function App() {
             //Store Hardware
             <Route path="/item" element={<Itempage />} />
             <Route path="/items" element={<Itemspage />} />
+            <Route path="/categories" element={<CreateCategory />} />
+            <Route path="/sub-categories" element={<CreateSubcategory />} />
             <Route path="/itemgroup" element={<ItemGroupPage />} />
             <Route path="/compositeitem" element={<NewCompositeItem />} />
             <Route path="/pricelists" element={<PriceLists />} />

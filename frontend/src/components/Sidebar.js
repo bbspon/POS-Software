@@ -245,7 +245,7 @@ const Sidebar = () => {
                   style={styles.dropdownToggle}
                   onClick={toggleStoreHardware}
                 >
-                  💰 Store Hardware
+                  💰 Product Management
                   <span>{isStoreHardware ? "▲" : "▼"}</span>
                 </div>
 
@@ -266,7 +266,7 @@ const Sidebar = () => {
                         style={styles.dropdownSubToggle}
                         onClick={toggleInventory}
                       >
-                        📦 Inventory
+                        📦 All Products
                         <span>{isInventoryOpen ? "▲" : "▼"}</span>
                       </div>
                       {isInventoryOpen && (
@@ -274,20 +274,20 @@ const Sidebar = () => {
                           <li>
                             <Link to="/item" style={styles.dropdownLink}>
                               {" "}
-                              Items
+                              Create New Product
                             </Link>
                           </li>
                           <li>
-                            <Link to="/itemgroup" style={styles.dropdownLink}>
-                              Item Group
+                            <Link to="/categories" style={styles.dropdownLink}>
+                              Create New Category
                             </Link>
                           </li>
                           <li>
                             <Link
-                              to="/compositeitem"
+                              to="/sub-categories"
                               style={styles.dropdownLink}
                             >
-                              Composite Items
+                              Create New Subcategory
                             </Link>
                           </li>
                           <li>
